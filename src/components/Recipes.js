@@ -12,13 +12,13 @@ export default function Recipes(props) {
       { title: "Directions", field: "directions" }
     ], 
 
-   data: [],
+  //  data: [],
 
   });
 
-  useEffect(() => {
-    props.getAllRecipes()
-  }, [state.data])
+  // useEffect(() => {
+  //   props.getAllRecipes()
+  // }, [state.data])
   
   props.recipes.length === 0 ? props.getAllRecipes() : 
   setTimeout(() => { //setTimeout only hits ONCE, which is why the state
