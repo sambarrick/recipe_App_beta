@@ -1,38 +1,135 @@
+/* Navigation.js Items */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-bar-color {
+  background-color: rgb(62, 182, 114) !important;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list-item {
+  margin: auto 20px;
+  font-size: 16px !important;
+}
+
+#fwr-header{
+  font-weight: bold;
+}
+
+.nav-list-item:hover {
+  -webkit-animation: bounce 1s;
+  animation: pulse 1s;
+}
+
+.login-btn-navigation:hover {
+  cursor: pointer;
+  -webkit-animation: bounce 1s;
+  animation: pulse 1s;
+}
+
+.logout {
+  cursor: pointer;
+}
+
+/* Login.js Component Items */
 .App {
+  -webkit-animation: fadeInDown 1s;
+  /* animation: pulse 1s; */
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  width: 50%;
+}
+
+.login-header {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.avatar {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin:  auto;
+  background-color: rgb(244, 166, 23) !important;
 }
 
-.App-link {
-  color: #61dafb;
+.welcome {
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.please-log-in {
+  text-align: center;
+}
+
+.login-button {
+  background-color: rgb(62, 182, 114) !important;
+}
+
+.forgot-password, .no-password {
+  font-size: 13px;
+}
+
+.forgot-password:hover, .no-password:hover {
+  color: rgb(244, 166, 23);
+} 
+
+/* Signup.js Component Items */
+
+.signup-component-container {
+  -webkit-animation: fadeInDown 1s;
+}
+
+#signup-restaurant-icon {
+  background-color: rgb(244, 166, 23) !important;
+}
+
+#signup-button {
+  background-color: rgb(62, 182, 114) !important;
+}
+
+.already-have-an-account:hover {
+  color: rgb(252, 180, 47);
+}
+
+/* NavigationLoggedIn.js Component Items */
+
+.hamburger-button {
+  color: white !important;
+}
+
+/* Recipes.js Component Items */
+
+.material-icons:hover {
+  color: rgb(244, 166, 23);
+}
+
+th{
+  color: rgb(244, 166, 23) !important;
+  font-weight: bold !important;
+}
+
+.hello-username {
+  text-align: right;
+  margin-right: 1.25%;
+  font-weight: bolder;
+}
+
+/* RecipeInfo.js Items */
+
+.back-to-recipes {
+  background-color: rgb(244, 166, 23) !important;
+  color: white !important;
+}
+.edit-recipe-icon:hover{
+  color: rgb(244, 166, 23);
+  cursor: pointer;
 }
