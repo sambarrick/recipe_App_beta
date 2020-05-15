@@ -19,7 +19,7 @@ const ProtectedRoute = ({ component: Component, ...rest }) => {
       {...rest}
       render={(props) => checkAuth() 
         ? <Component {...props} /> 
-        : <Redirect to="/recipes" />
+        : <Redirect to="/login" />
       }
     />
   )

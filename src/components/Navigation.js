@@ -30,7 +30,7 @@ export default function ButtonAppBar() {
           <ul className="nav-list">
              <li className="nav-list-item">
             {!checkAuth() ? <Link to="/login">Login</Link> 
-            : <Link to="/recipes"></Link>} 
+            : <NavigationLoggedIn />} 
   </li> 
       
           </ul>
