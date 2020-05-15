@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const dotenv = require("dotenv");
 dotenv.config(); 
-const authRouter = require('../server/routes/auth');
+//const authRouter = require('../server/routes/auth');
 
 //require routes here
 const recipeRoutes = require("./routes/recipeRoutes");
@@ -33,6 +33,7 @@ app.use("/users", usersRoutes);
 
 //general
 app.use(express.static(path.join(__dirname, "../build")));
+console.log("working line 36?")
 
 //general
 app.get("*", function(req, res) {

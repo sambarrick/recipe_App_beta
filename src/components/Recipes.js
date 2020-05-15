@@ -12,7 +12,7 @@ export default function Recipes(props) {
       { title: "Directions", field: "directions" }
     ], 
 
-  //  data: [],
+   data: [],
 
   });
 
