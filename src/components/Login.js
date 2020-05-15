@@ -28,7 +28,7 @@ class App extends Component {
     e.preventDefault();
     // set cookie here
     document.cookie = "loggedIn=true;max-age=60*2000";
-    window.location.replace("/signup");
+    window.location.replace("/recipes");
   };
 
   render() {
