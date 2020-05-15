@@ -12,18 +12,6 @@ export const checkAuth = () => {
   return cookies["loggedIn"] ? true : false;
 };
 
-// const AuthService = {
-//   isAuthenticated: false,
-//   authenticate(cb) {
-//     this.isAuthenticated = true
-//     setTimeout(cb, 100)
-//   },
-//   logout(cb) {
-//     this.isAuthenticated = false
-//     setTimeout(cb, 100)
-//   }
-// };
-
 // Write ProtectedRoute function here
 const ProtectedRoute = ({ component: Component, ...rest }) => {
   return (
@@ -37,14 +25,6 @@ const ProtectedRoute = ({ component: Component, ...rest }) => {
   )
 }
 
-// const SecretRoute = ({ component: Component, ...rest }) => (
-//   <Route {...rest} render={(props) => (
-//     AuthService.isAuthenticated === true
-//       ? <Component {...props} />
-//       : <Redirect to='/login' />
-//   )} />
-// );
-
 const Router = () => {
   return (
     <Switch>
@@ -52,7 +32,7 @@ const Router = () => {
       <Route path="/login" component={Login} />
       <Route path="/signup" component={Signup} />
       <Route path="/recipes/:id" component={RecipeInfo} />
-      <Route path="/recipes" component={Recipes} />
+      <ProtectedRoute path="/recipes" component={Recipes} />
     </Switch>
   );
 };
