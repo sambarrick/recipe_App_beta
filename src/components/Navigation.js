@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
 import { Link } from "react-router-dom";
 import { checkAuth } from "../Router";
+import NavigationLoggedIn from '../containers/NavigationLoggedIn'
 
 const useStyles = makeStyles(theme => ({
   root: {
