@@ -5,9 +5,9 @@ export default {
 
     recipes: [
         
-    ]
+    ],
 
-    // recipe: [
+    recipe: [
 
-    //  ]
+     ]
 }

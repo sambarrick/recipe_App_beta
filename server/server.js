@@ -33,7 +33,6 @@ app.use("/users", usersRoutes);
 
 //general
 app.use(express.static(path.join(__dirname, "../build")));
-console.log("working line 36?")
 
 //general
 app.get("*", function(req, res) {

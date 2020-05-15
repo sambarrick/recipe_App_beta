@@ -4,7 +4,8 @@ import { login, logout, getAllRecipes } from '../redux/actions';
 
 const mapStateToProps = (state) => {
     return {
-        user: state.user
+        user: state.user,
+        recipes: state.recipes
     }
 }
 
