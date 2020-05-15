@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import In from "../components/NavigationLoggedIn";
+import NavigationLoggedIn from "../components/NavigationLoggedIn";
 import {
   addRecipe,
   getRecipeById,
