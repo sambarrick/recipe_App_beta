@@ -17,7 +17,6 @@ export const getAllRecipes = () => {
     fetch("/recipes")
       .then(res => res.json())
       .then(response => {
-        console.log(response)
         const action = {
           type: "FETCH_RECIPES",
           value: response

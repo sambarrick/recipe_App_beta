@@ -102,6 +102,10 @@ a {
 
 /* NavigationLoggedIn.js Component Items */
 
+.nav-bar-color {
+  background-color: rgb(62, 182, 114) !important;
+}
+
 .hamburger-button {
   color: white !important;
 }

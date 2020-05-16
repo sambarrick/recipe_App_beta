@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect } from "react";
-import MaterialTable from 'material-table';
+import MaterialTable from "material-table";
+import NavigationLoggedIn from '../components/NavigationLoggedIn'
 
 export default function Recipes(props) {
   const [state, setState] = React.useState({
@@ -16,9 +17,9 @@ export default function Recipes(props) {
 
   });
 
-  // useEffect(() => {
-  //   props.getAllRecipes()
-  // }, [state.data])
+  useEffect(() => {
+    props.getAllRecipes()
+  }, [state.data])
   
   props.recipes.length === 0 ? props.getAllRecipes() : 
   setTimeout(() => { //setTimeout only hits ONCE, which is why the state
@@ -34,7 +35,7 @@ export default function Recipes(props) {
   return (
     <Fragment>
 
-
+    <NavigationLoggedIn />
 
     <MaterialTable
       title= "My Recipes"

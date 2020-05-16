@@ -47,7 +47,7 @@ class App extends Component {
           <p className="please-log-in">Please log in to view your recipes</p>
           <TextField
             className="textfield-login-component"
-            required
+            //required
             onChange={this.handleTextChange}
             value={this.state.email}
             variant="outlined"
@@ -59,7 +59,7 @@ class App extends Component {
           <br />
           <TextField
             className="textfield-login-component"
-            required
+            //required
             onChange={this.handleTextChange}
             value={this.state.password}
             variant="outlined"
@@ -68,6 +68,7 @@ class App extends Component {
             type="password"
           />
           <br />
+          <Link to="/recipes">
           <Button
             className="login-button"
             type="submit"
@@ -80,6 +81,7 @@ class App extends Component {
           >
             Login
           </Button>
+          </Link>
           <br />
           <Grid container>
             <Grid item xs>
