@@ -6,6 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import Router from'./Router'
 import store from './redux/store'
+import { useAuth0 } from './contexts/auth0-context';
 
 
 import './App.css';
