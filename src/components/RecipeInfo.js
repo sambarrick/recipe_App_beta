@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 const RecipeInfo = (props) => {
 
+  // eslint-disable-next-line
   const [state, setState] = React.useState({
     ingredients: "",
     directions: "",
@@ -15,6 +16,7 @@ const RecipeInfo = (props) => {
   console.log(state.ingredients);
 
   const id = props.match.params.id
+  // eslint-disable-next-line
   const recipez = props.recipes.find(c => c.id == id);
 
   if(props.recipes.length > 0){

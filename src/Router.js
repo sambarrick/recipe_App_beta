@@ -5,7 +5,7 @@ import Login from "./containers/Login"
 import Recipes from "./containers/Recipes";
 import RecipeInfo from "./containers/RecipeInfo"
 import Signup from "./containers/Signup"
-import { useAuth0 } from '../src/contexts/auth0-context';
+
 
 // Write checkAuth function here
 export const checkAuth = () => {
@@ -34,6 +34,7 @@ export const checkAuth = () => {
 // );
 
 // Write ProtectedRoute function here
+// eslint-disable-next-line
 const ProtectedRoute = ({ component: Component, ...rest }) => {
   return (
     <Route
