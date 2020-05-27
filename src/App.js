@@ -10,7 +10,7 @@ import "./App.css";
 import { Auth0Context } from './contexts/auth0-context'; 
 
 function App() {
-  const { isLoading, user, loginWithRedirect } = useContext(Auth0Context);
+  const { isLoading, user, loginWithRedirect, logout } = useContext( Auth0Context );
 
   return (
   
@@ -33,6 +33,12 @@ function App() {
               <p>Hello {user.name}</p>
 
               {user.picture && <img src={user.picture} alt="My Avatar" />}
+              <button
+                onClick={() => logout({ returnTo: window.location.origin })}
+                className="button is-small is-dark"
+              >
+                Logout
+          </button>
             </div>
           )}
         </div>
