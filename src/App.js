@@ -7,10 +7,12 @@ import { Provider } from "react-redux";
 import Router from "./Router";
 import store from "./redux/store";
 import "./App.css";
-import { Auth0Context } from './contexts/auth0-context'; 
+//import { Auth0Context } from './contexts/auth0-context'; 
+import { useAuth0 } from './contexts/auth0-context';
 
 function App() {
-  const { isLoading, user, loginWithRedirect, logout } = useContext( Auth0Context );
+  //const { isLoading, user, loginWithRedirect, logout } = useContext( Auth0Context );
+  const { isLoading, user, loginWithRedirect, logout } = useAuth0();
 
   return (
   
