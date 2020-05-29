@@ -33,8 +33,6 @@ function App() {
             <div>
               <h1>You are logged in!</h1>
               <p>Hello {user.name}</p>
-
-              {user.picture && <img src={user.picture} alt="My Avatar" />}
               <button
                 onClick={() => logout({ returnTo: window.location.origin })}
                 className="button is-small is-dark"

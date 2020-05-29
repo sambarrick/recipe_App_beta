@@ -9,8 +9,10 @@ import {
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import RestaurantIcon from "@material-ui/icons/Restaurant";
+import { useAuth0 } from '../contexts/auth0-context'
 
 class App extends Component {
+  
   state = {
     email: "",
     password: "",
@@ -29,6 +31,8 @@ class App extends Component {
     document.cookie = "loggedIn=true;max-age=60*2000";
     window.location.replace("/recipes");
   };
+  
+ 
 
   render() {
     return (

@@ -55,6 +55,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import { Link } from "react-router-dom";
+import { useAuth0 } from '../contexts/auth0-context';
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -100,6 +101,7 @@ export default function PrimarySearchAppBar() {
 
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
+  const { isLoading, user, loginWithRedirect, logout } = useAuth0();
 
   const handleProfileMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -186,6 +188,16 @@ export default function PrimarySearchAppBar() {
          
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
+
+          <div className="navbar-end">
+          {/* if there is no user. show the login button */}
+          {!isLoading && !user && (
+            <button onClick={loginWithRedirect} className="navbar-item">
+              Login
+            </button>
+          )}
+          
+          </div>
 
             <IconButton
               edge="end"
