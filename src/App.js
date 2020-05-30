@@ -20,7 +20,7 @@ function App() {
       <BrowserRouter>
       <div className="hero is-info is-fullheight">
       <div className="hero-body">
-        <div className="container has-text-centered">
+        {/* <div className="container has-text-centered">
         {!isLoading && !user && (
           <div>
           <h1>Click Below!</h1>
@@ -41,7 +41,7 @@ function App() {
           </button>
             </div>
           )}
-        </div>
+           </div> */}
       </div>
     </div>
         <Navigation />

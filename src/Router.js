@@ -8,10 +8,10 @@ import Signup from "./containers/Signup"
 
 
 // Write checkAuth function here
-export const checkAuth = () => {
-  const cookies = cookie.parse(document.cookie);
-  return cookies["loggedIn"] ? true : false;
-};
+// export const checkAuth = () => {
+//   const cookies = cookie.parse(document.cookie);
+//   return cookies["loggedIn"] ? true : false;
+// };
 
 // const AuthService = {
 //   isAuthenticated: false,
@@ -29,23 +29,23 @@ export const checkAuth = () => {
 //   <Route {...rest} render={(props) => (
 //     AuthService.isAuthenticated === true
 //       ? <Component {...props} />
-//       : <Redirect to='/login' />
+//       : <Redirect to='/recipes' />
 //   )} />
 // );
 
 // Write ProtectedRoute function here
 // eslint-disable-next-line
-const ProtectedRoute = ({ component: Component, ...rest }) => {
-  return (
-    <Route
-      {...rest}
-      render={(props) => checkAuth() 
-        ? <Component {...props} /> 
-        : <Redirect to="/login" />
-      }
-    />
-  )
-}
+// const ProtectedRoute = ({ component: Component, ...rest }) => {
+//   return (
+//     <Route
+//       {...rest}
+//       render={(props) => checkAuth() 
+//         ? <Component {...props} /> 
+//         : <Redirect to="/login" />
+//       }
+//     />
+//   )
+// }
 
 const Router = () => {
   return (
