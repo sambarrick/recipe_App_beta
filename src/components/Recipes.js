@@ -1,6 +1,5 @@
 import React, { Fragment, useEffect } from "react";
 import MaterialTable from "material-table";
-import NavigationLoggedIn from '../components/NavigationLoggedIn'
 
 export default function Recipes(props) {
   const [state, setState] = React.useState({
@@ -34,8 +33,6 @@ export default function Recipes(props) {
 
   return (
     <Fragment>
-
-    <NavigationLoggedIn />
 
     <MaterialTable
       title= "My Recipes"
