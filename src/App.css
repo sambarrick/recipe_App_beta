@@ -87,24 +87,6 @@ a {
   color: rgb(244, 166, 23);
 } 
 
-/* Signup.js Component Items */
-
-.signup-component-container {
-  -webkit-animation: fadeInDown 1s;
-}
-
-#signup-restaurant-icon {
-  background-color: rgb(244, 166, 23) !important;
-}
-
-#signup-button {
-  background-color: rgb(62, 182, 114) !important;
-}
-
-.already-have-an-account:hover {
-  color: rgb(252, 180, 47);
-}
-
 /* NavigationLoggedIn.js Component Items */
 
 .nav-bar-color {

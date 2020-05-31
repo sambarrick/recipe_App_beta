@@ -85,19 +85,6 @@ class App extends Component {
             Login
           </Button>
           </Link>
-          <br />
-          <Grid container>
-            <Grid item xs>
-              <Link to="/signup" className="forgot-password" variant="body2">
-                Forgot password?
-              </Link>
-            </Grid>
-            <Grid item>
-              <Link to="/signup" className="no-password" variant="body2">
-                No account? Sign Up
-              </Link>
-            </Grid>
-          </Grid>
         </form>
       </Container>
     );

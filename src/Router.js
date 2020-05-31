@@ -4,8 +4,6 @@ import cookie from "cookie"
 import Login from "./containers/Login"
 import Recipes from "./containers/Recipes";
 import RecipeInfo from "./containers/RecipeInfo"
-import Signup from "./containers/Signup"
-
 
 // Write checkAuth function here
 // export const checkAuth = () => {
@@ -52,7 +50,7 @@ const Router = () => {
     <Switch>
      <Route exact path="/" component={Login} />
       <Route path="/login" component={Login} />
-      <Route path="/signup" component={Signup} />
+
       <Route path="/recipes/:id" component={RecipeInfo} />
       <Route path="/recipes" component={Recipes} />
     </Switch>
