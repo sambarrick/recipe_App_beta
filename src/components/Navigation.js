@@ -9,6 +9,7 @@ import Menu from '@material-ui/core/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import { Link } from "react-router-dom";
 import { useAuth0 } from '../contexts/auth0-context';
+import { Button } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -126,8 +127,8 @@ export default function PrimarySearchAppBar() {
             open={isMenuOpen}
             onClose={handleMenuClose}
           >
-          <MenuItem onClick={loginWithRedirect} className="navbar-item">
-          Login</MenuItem>
+          <Button onClick={loginWithRedirect} className="navbar-item">
+          Login</Button>
           </Menu>
           </div>
           )}
