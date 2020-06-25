@@ -1,3 +1,5 @@
+require ('dotenv').config() 
+
 const mysql = require('mysql')
 
 class Connection {
@@ -8,8 +10,10 @@ class Connection {
         connectionLimit: 100,
         host: '34.71.170.227',
         user: 'root',
-        password: '',
-        database: 'recipe_app_sql_db'
+        password: process.env.SQL_SECRET,
+        database: 'recipe_app_sql_db',
+        port: 3306
+
       })
 console.log("connection made")
       return this.pool

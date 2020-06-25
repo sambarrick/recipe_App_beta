@@ -150,8 +150,7 @@ export default function PrimarySearchAppBar() {
           open={isMenuOpen}
           onClose={handleMenuClose}
         >
-        <Link to="./recipes"><MenuItem onClick={handleMenuClose}>My Recipes</MenuItem></Link>
-        <Link to="./recipes"><MenuItem onClick={handleMenuClose}>Profile</MenuItem></Link>
+        <Link to="./login"><MenuItem onClick={handleMenuClose}>Profile</MenuItem></Link>
         <MenuItem onClick={() => logout({ returnTo: window.location.origin })}
         className="button is-small is-dark"
       >Logout</MenuItem>
