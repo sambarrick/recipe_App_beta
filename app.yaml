@@ -1,7 +1,7 @@
 runtime: nodejs10
 
 includes:
-  -env_variables.yaml 
+  - env_variables.yaml 
 
 entrypoint: node ./server/server.js
 

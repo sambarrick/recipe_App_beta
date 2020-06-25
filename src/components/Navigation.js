@@ -135,9 +135,8 @@ export default function PrimarySearchAppBar() {
           
          
 
-          {!isLoading && user && (
+          {!isLoading && user && ( //need isLoading && !user function
             <div>
-              {/* <p>Hello, {user.name}</p> */}
              
           
     
